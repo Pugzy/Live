@@ -1,0 +1,150 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%; 
+	background-color: #222222;
+}
+
+.navbar {
+	background-color: grey;
+	width: 100%;
+	height: 40px;
+	background-color: grey;
+	background-image: url(images/navbar_hover.png);
+	float: left;
+}
+
+.navbarac {
+	background-color: grey;
+	width: 50%;
+	height: 40px;
+	background-color: grey;
+	background-image: url(images/navbar_hover.png);
+	float: left;
+}
+
+.topcontent_background{
+	background-image: url(images/superlightbricks.png);
+	width: 100%;
+	height: 1200px;
+}
+
+
+.bottomcontent_background{
+	width: 100%;
+	height: 500px;
+	background-color: white;
+}
+
+.footerbackground{
+	background-color: grey;
+	background-image: url(images/superlightbricks.png);
+	width: 100%;
+	height: 100px;
+}
+
+.content_box{
+	height: inherit;
+	width: 80%;
+	display: block;
+	margin-left: 10%;
+	margin-right: 10%;
+	float:left;
+}
+
+.stream{
+	padding: 50px 0;	
+}
+
+.streamerbox{
+	background-color: rgba(255, 255, 255, 0.05);
+	padding: 10px 0;
+	border: thin solid #5E5E5E;
+	min-height: 62px;
+	margin-bottom: 10px;
+}
+
+.streamer-logo {
+	display: block;
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin-left: 10px;
+}
+
+.streamer-text {
+	display: block;
+	float: left;
+	margin-left: 10px;
+	height: 60px;
+	width: 670px;
+	overflow-y: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+}
+
+.streamer-streamer {
+	display: inline-block;
+	font-weight: bold;
+	color: white;
+}
+    
+.streamer-title {
+	display: inline-block;
+	color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	text-transform:uppercase;
+
+}
+
+li {
+    float: left;
+	border-left: 1px solid gray;
+}
+
+a {
+    display: block;
+    width: 120px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: black;
+	font-weight: bold;
+}
+
+a{
+	text-decoration: inherit;
+	color: inherit;
+}
+
+li:hover{
+	background-image: url(images/navbar.png);
+	color: #009CED;
+}
+
+.button {
+  background: #808080;
+  font-family: Arial;
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.button:hover {
+  background: #454545;
+  text-decoration: none;
+  color: white;
+}
+
+.button:active {
+  background: #808080;
+  text-decoration: none;
+}
