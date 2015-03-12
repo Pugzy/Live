@@ -6,6 +6,18 @@
 	<link href="main.css" type="text/css" rel="stylesheet" />
 	<link rel="icon" type="image/png" href="images/favicon.png">
 	
+	<script> 
+
+		function changeImage()
+		{
+		var img = document.getElementById("image");
+		img.src="images/mcbackground.png";
+		return false;
+		}
+
+	</script>
+	
+	
 </head>
 	<body>
 		<div class="navbar">
@@ -26,9 +38,10 @@
 			</div>
 			<div class="content_box">
 
-				<iframe src="http://www.twitch.tv/PrestigeGameplay/embed" frameborder="0" scrolling="no" height="380px" width="620"></iframe>
-				<iframe src="http://www.twitch.tv/PrestigeGameplay/chat?popout=" frameborder="0" scrolling="no" height="378" width="310"></iframe>
-				
+				<div class="stream" style="text-align: center;">
+					<iframe src="http://www.twitch.tv/PrestigeGameplay/embed" frameborder="0" scrolling="no" height="380px" width="620"></iframe>
+					<iframe src="http://www.twitch.tv/PrestigeGameplay/chat?popout=" frameborder="0" scrolling="no" height="378" width="310"></iframe>
+				</div>
 
 			</div>
 
@@ -48,14 +61,8 @@
 							<span class="streamer-title">Singularity vs Big Dango Family (RV2)</span>
 							<br>
 							<button class="button">Show Stream</button>
-							<button class="button">Direct Link</button>
-						</div>
-						<div style="display:none;">
-						
-						<!--- Stream --->
-						
-						</div>		
-						
+							<button class="button">Link</button>
+						</div>						
 					</div>
 					<!--- Streamer End --->
 					
@@ -70,17 +77,10 @@
 							<span class="streamer-title">Pony Swag vs Kyudo (Warlock)</span>
 							<br>
 							<button class="button">Show Stream</button>
-							<button class="button">Direct Link</button>
-						</div>
-						<div style="display:none;">
-						
-												
-						<!--- Stream --->
-						
-							
-						</div>		
-						
+							<button class="button">Link</button>
+						</div>					
 					</div>
+					
 					<!--- Streamer End --->
 					
 					<!--- Streamer --->
@@ -94,15 +94,8 @@
 							<span class="streamer-title">Dopamine vs Padlock (Cloud 9)</span>
 							<br>
 							<button class="button">Show Stream</button>
-						</div>
-						<div style="display:none;">
-							
-													
-						<!--- Stream --->
-						
-							
-						</div>		
-						
+							<button class="button">Link</button>
+						</div>				
 					</div>
 					<!--- Streamer End --->
 										<!--- Streamer --->
@@ -116,15 +109,8 @@
 							<span class="streamer-title">Dopamine vs Padlock (Cloud 9)</span>
 							<br>
 							<button class="button">Show Stream</button>
-						</div>
-						<div style="display:none;">
-							
-													
-						<!--- Stream --->
-						
-							
-						</div>		
-						
+							<button class="button">Link</button>
+						</div>					
 					</div>
 					<!--- Streamer End --->
 										<!--- Streamer --->
@@ -138,14 +124,8 @@
 							<span class="streamer-title">Dopamine vs Padlock (Cloud 9)</span>
 							<br>
 							<button class="button">Show Stream</button>
-						</div>
-						<div style="display:none;">
-							
-													
-						<!--- Stream --->
-						
-						</div>		
-						
+							<button class="button">Link</button>
+						</div>					
 					</div>
 					<!--- Streamer End --->
 										<!--- Streamer --->
@@ -159,13 +139,8 @@
 							<span class="streamer-title">Dopamine vs Padlock (Cloud 9)</span>
 							<br>
 							<button class="button">Show Stream</button>
-						</div>
-						<div style="display:none;">
-							
-													
-						<!--- Stream --->
-						
-						
+							<button class="button">Link</button>
+						</div>						
 					</div>
 					<!--- Streamer End --->
 										<!--- Streamer --->
@@ -179,14 +154,8 @@
 							<span class="streamer-title">Dopamine vs Padlock (Cloud 9)</span>
 							<br>
 							<button class="button">Show Stream</button>
-						</div>
-						<div style="display:none;">
-							
-													
-						<!--- Stream --->
-						
-						</div>		
-						
+							<button class="button">Link</button>
+						</div>						
 					</div>
 					<!--- Streamer End --->
 										<!--- Streamer --->
@@ -200,14 +169,8 @@
 							<span class="streamer-title">Dopamine vs Padlock (Cloud 9)</span>
 							<br>
 							<button class="button">Show Stream</button>
-						</div>
-						<div style="display:none;">
-							
-													
-						<!--- Stream --->
-						
-						</div>		
-						
+							<button class="button">Link</button>
+						</div>						
 					</div>
 					<!--- Streamer End --->
 
@@ -261,6 +224,7 @@
 		<div class="footerbackground">
 			<div class="content_box">
 				<p style="color: white;">Welcome to the Minecraft League Website</>
+				<button id="clickme" onclick="changeImage();">Click to change image!</button>
 			</div>
 		</div>
 		
