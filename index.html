@@ -3,100 +3,268 @@
 <head>
 	<title>mcSports</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link href="stylesheets/main.css" type="text/css" rel="stylesheet" />
+	<link href="main.css" type="text/css" rel="stylesheet" />
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	
+	<script> 
+
+		function changeImage()
+		{
+		var img = document.getElementById("image");
+		img.src="images/mcbackground.png";
+		return false;
+		}
+
+	</script>
+	
+	
 </head>
 	<body>
 		<div class="navbar">
 			<div class="content_box">
-				<img src="images/tracksitelogo.png" style="height:30px;margin-top:6px;margin-left;100px;">
+				<img src="images/tracksitelogo.png" style="height:30px;margin-top:6px;">
 				
 				<ul style="float:right;">
-				  <li class="activenavbar"><a id="navtext" href="#">Home</a></li>
-				  <li><a href="#" id="navtext">Live</a></li>
-				  <li><a href="#" id="navtext">Schedule</a></li>
-				  <li style="border-right: 1px solid gray;" id="navtext"><a href="#">About</a></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Live</a></li>
+					<li><a href="#">Schedule</a></li>
+					<li style="border-right: 1px solid gray;" id="navtext"><a href="#">About</a></li>
 				</ul>
 			</div>
 		</div>
 		<div class="topcontent_background">
+			<div class="mainbackground">
+				<img src="images/mcbackground2.png" id="image">
+			</div>
 			<div class="content_box">
 
 				<div class="stream" style="text-align: center;">
-					<iframe src="http://www.twitch.tv/PrestigeGameplay/embed" frameborder="0" scrolling="no" height="378" width="620"></iframe>
-					<iframe frameborder="0" scrolling="no" name="chat_embed" src="http://twitch.tv/chat/embed?channel=btrim&amp;popout_chat=true" height="378" width="310" style="margin-left:10px;"></iframe>
+					<iframe src="http://www.twitch.tv/PrestigeGameplay/embed" frameborder="0" scrolling="no" height="380px" width="620"></iframe>
+					<iframe src="http://www.twitch.tv/PrestigeGameplay/chat?popout=" frameborder="0" scrolling="no" height="378" width="310"></iframe>
 				</div>
-				
-				
-				<!--- Streamer --->
-				<div class="streamerbox">
-					<div class="streamer-logo">
-						<img src="https://minotar.net/helm/Minii_/168.png" width="60" height="60">
+
+			</div>
+
+		</div>
+
+		<div class="bottomcontent_background">
+		
+			<div class="content_box">
+			<!--- Streamer --->
+					<div class="streamerbox">
+						<div class="streamer-logo">
+							<img src="https://minotar.net/helm/Minii_/168.png" width="60" height="60">
+						</div>
+						<div class="streamer-text">
+							<span class="streamer-name"><strong>Minii_</strong></span>
+							<br>
+							<span class="streamer-title">Singularity vs Big Dango Family (RV2)</span>
+							<br>
+							<button class="button">Show Stream</button>
+						</div>
+						<div style="display:none;">
+							<object type="application/x-shockwave-flash" height="378" width="620" name="video_embed" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=" bgcolor="#000000"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><param name="allowNetworking" value="all"><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf"><param name="flashvars" value="hostname=www.twitch.tv&amp;channel=btrim&amp;auto_play=true&amp;start_volume=25"></object>
+							<iframe frameborder="0" scrolling="no" name="chat_embed" src="http://twitch.tv/chat/embed?channel=btrim&amp;popout_chat=true" height="378" width="310" style="margin-left:10px;"></iframe>
+						</div>		
+						
 					</div>
-					<div class="streamer-text">
-						<span class="streamer-name"><strong>Minii_</strong></span>
-						<br>
-						<span class="streamer-title">Singularity vs Big Dango Family (RV2)</span>
-						<br>
-						<button class="button">Show Stream</button>
-					</div>
-					<div style="display:none;">
-						<object type="application/x-shockwave-flash" height="378" width="620" name="video_embed" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=" bgcolor="#000000"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><param name="allowNetworking" value="all"><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf"><param name="flashvars" value="hostname=www.twitch.tv&amp;channel=btrim&amp;auto_play=true&amp;start_volume=25"></object>
-						<iframe frameborder="0" scrolling="no" name="chat_embed" src="http://twitch.tv/chat/embed?channel=btrim&amp;popout_chat=true" height="378" width="310" style="margin-left:10px;"></iframe>
-					</div>		
+					<!--- Streamer End --->
 					
-				</div>
-				<!--- Streamer End --->
-				
-				<!--- Streamer --->
-				<div class="streamerbox">
-					<div class="streamer-logo">
-						<img src="https://minotar.net/helm/redalex457/168.png" width="60" height="60">
+					<!--- Streamer --->
+					<div class="streamerbox">
+						<div class="streamer-logo">
+							<img src="https://minotar.net/helm/redalex457/168.png" width="60" height="60">
+						</div>
+						<div class="streamer-text">
+							<span class="streamer-name"><strong>redalex457</strong></span>
+							<br>
+							<span class="streamer-title">Pony Swag vs Kyudo (Warlock)</span>
+							<br>
+							<button class="button">Show Stream</button>
+						</div>
+						<div style="display:none;">
+							<object type="application/x-shockwave-flash" height="378" width="620" name="video_embed" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=" bgcolor="#000000"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><param name="allowNetworking" value="all"><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf"><param name="flashvars" value="hostname=www.twitch.tv&amp;channel=btrim&amp;auto_play=true&amp;start_volume=25"></object>
+							<iframe frameborder="0" scrolling="no" name="chat_embed" src="http://twitch.tv/chat/embed?channel=btrim&amp;popout_chat=true" height="378" width="310" style="margin-left:10px;"></iframe>
+						</div>		
+						
 					</div>
-					<div class="streamer-text">
-						<span class="streamer-name"><strong>redalex457</strong></span>
-						<br>
-						<span class="streamer-title">Pony Swag vs Kyudo (Warlock)</span>
-						<br>
-						<button class="button">Show Stream</button>
-					</div>
-					<div style="display:none;">
-						<object type="application/x-shockwave-flash" height="378" width="620" name="video_embed" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=" bgcolor="#000000"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><param name="allowNetworking" value="all"><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf"><param name="flashvars" value="hostname=www.twitch.tv&amp;channel=btrim&amp;auto_play=true&amp;start_volume=25"></object>
-						<iframe frameborder="0" scrolling="no" name="chat_embed" src="http://twitch.tv/chat/embed?channel=btrim&amp;popout_chat=true" height="378" width="310" style="margin-left:10px;"></iframe>
-					</div>		
+					<!--- Streamer End --->
 					
-				</div>
-				<!--- Streamer End --->
-				
-				<!--- Streamer --->
-				<div class="streamerbox">
-					<div class="streamer-logo">
-						<img src="https://minotar.net/helm/iPGz/168.png" width="60" height="60">
+					<!--- Streamer --->
+					<div class="streamerbox">
+						<div class="streamer-logo">
+							<img src="https://minotar.net/helm/iPGz/168.png" width="60" height="60">
+						</div>
+						<div class="streamer-text">
+							<span class="streamer-name"><strong>iPGz</strong></span>
+							<br>
+							<span class="streamer-title">Dopamine vs Padlock (Cloud 9)</span>
+							<br>
+							<button class="button">Show Stream</button>
+						</div>
+						<div style="display:none;">
+							<object type="application/x-shockwave-flash" height="378" width="620" name="video_embed" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=" bgcolor="#000000"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><param name="allowNetworking" value="all"><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf"><param name="flashvars" value="hostname=www.twitch.tv&amp;channel=btrim&amp;auto_play=true&amp;start_volume=25"></object>
+							<iframe frameborder="0" scrolling="no" name="chat_embed" src="http://twitch.tv/chat/embed?channel=btrim&amp;popout_chat=true" height="378" width="310" style="margin-left:10px;"></iframe>
+						</div>		
+						
 					</div>
-					<div class="streamer-text">
-						<span class="streamer-name"><strong>iPGz</strong></span>
-						<br>
-						<span class="streamer-title">Dopamine vs Padlock (Cloud 9)</span>
-						<br>
-						<button class="button">Show Stream</button>
+					<!--- Streamer End --->
+										<!--- Streamer --->
+					<div class="streamerbox">
+						<div class="streamer-logo">
+							<img src="https://minotar.net/helm/iPGz/168.png" width="60" height="60">
+						</div>
+						<div class="streamer-text">
+							<span class="streamer-name"><strong>iPGz</strong></span>
+							<br>
+							<span class="streamer-title">Dopamine vs Padlock (Cloud 9)</span>
+							<br>
+							<button class="button">Show Stream</button>
+						</div>
+						<div style="display:none;">
+							<object type="application/x-shockwave-flash" height="378" width="620" name="video_embed" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=" bgcolor="#000000"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><param name="allowNetworking" value="all"><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf"><param name="flashvars" value="hostname=www.twitch.tv&amp;channel=btrim&amp;auto_play=true&amp;start_volume=25"></object>
+							<iframe frameborder="0" scrolling="no" name="chat_embed" src="http://twitch.tv/chat/embed?channel=btrim&amp;popout_chat=true" height="378" width="310" style="margin-left:10px;"></iframe>
+						</div>		
+						
 					</div>
-					<div style="display:none;">
-						<object type="application/x-shockwave-flash" height="378" width="620" name="video_embed" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=" bgcolor="#000000"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><param name="allowNetworking" value="all"><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf"><param name="flashvars" value="hostname=www.twitch.tv&amp;channel=btrim&amp;auto_play=true&amp;start_volume=25"></object>
-						<iframe frameborder="0" scrolling="no" name="chat_embed" src="http://twitch.tv/chat/embed?channel=btrim&amp;popout_chat=true" height="378" width="310" style="margin-left:10px;"></iframe>
-					</div>		
-					
-				</div>
-				<!--- Streamer End --->
-				
-				
+					<!--- Streamer End --->
+										<!--- Streamer --->
+					<div class="streamerbox">
+						<div class="streamer-logo">
+							<img src="https://minotar.net/helm/iPGz/168.png" width="60" height="60">
+						</div>
+						<div class="streamer-text">
+							<span class="streamer-name"><strong>iPGz</strong></span>
+							<br>
+							<span class="streamer-title">Dopamine vs Padlock (Cloud 9)</span>
+							<br>
+							<button class="button">Show Stream</button>
+						</div>
+						<div style="display:none;">
+							<object type="application/x-shockwave-flash" height="378" width="620" name="video_embed" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=" bgcolor="#000000"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><param name="allowNetworking" value="all"><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf"><param name="flashvars" value="hostname=www.twitch.tv&amp;channel=btrim&amp;auto_play=true&amp;start_volume=25"></object>
+							<iframe frameborder="0" scrolling="no" name="chat_embed" src="http://twitch.tv/chat/embed?channel=btrim&amp;popout_chat=true" height="378" width="310" style="margin-left:10px;"></iframe>
+						</div>		
+						
+					</div>
+					<!--- Streamer End --->
+										<!--- Streamer --->
+					<div class="streamerbox">
+						<div class="streamer-logo">
+							<img src="https://minotar.net/helm/iPGz/168.png" width="60" height="60">
+						</div>
+						<div class="streamer-text">
+							<span class="streamer-name"><strong>iPGz</strong></span>
+							<br>
+							<span class="streamer-title">Dopamine vs Padlock (Cloud 9)</span>
+							<br>
+							<button class="button">Show Stream</button>
+						</div>
+						<div style="display:none;">
+							<object type="application/x-shockwave-flash" height="378" width="620" name="video_embed" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=" bgcolor="#000000"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><param name="allowNetworking" value="all"><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf"><param name="flashvars" value="hostname=www.twitch.tv&amp;channel=btrim&amp;auto_play=true&amp;start_volume=25"></object>
+							<iframe frameborder="0" scrolling="no" name="chat_embed" src="http://twitch.tv/chat/embed?channel=btrim&amp;popout_chat=true" height="378" width="310" style="margin-left:10px;"></iframe>
+						</div>		
+						
+					</div>
+					<!--- Streamer End --->
+										<!--- Streamer --->
+					<div class="streamerbox">
+						<div class="streamer-logo">
+							<img src="https://minotar.net/helm/iPGz/168.png" width="60" height="60">
+						</div>
+						<div class="streamer-text">
+							<span class="streamer-name"><strong>iPGz</strong></span>
+							<br>
+							<span class="streamer-title">Dopamine vs Padlock (Cloud 9)</span>
+							<br>
+							<button class="button">Show Stream</button>
+						</div>
+						<div style="display:none;">
+							<object type="application/x-shockwave-flash" height="378" width="620" name="video_embed" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=" bgcolor="#000000"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><param name="allowNetworking" value="all"><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf"><param name="flashvars" value="hostname=www.twitch.tv&amp;channel=btrim&amp;auto_play=true&amp;start_volume=25"></object>
+							<iframe frameborder="0" scrolling="no" name="chat_embed" src="http://twitch.tv/chat/embed?channel=btrim&amp;popout_chat=true" height="378" width="310" style="margin-left:10px;"></iframe>
+						</div>		
+						
+					</div>
+					<!--- Streamer End --->
+										<!--- Streamer --->
+					<div class="streamerbox">
+						<div class="streamer-logo">
+							<img src="https://minotar.net/helm/iPGz/168.png" width="60" height="60">
+						</div>
+						<div class="streamer-text">
+							<span class="streamer-name"><strong>iPGz</strong></span>
+							<br>
+							<span class="streamer-title">Dopamine vs Padlock (Cloud 9)</span>
+							<br>
+							<button class="button">Show Stream</button>
+						</div>
+						<div style="display:none;">
+							<object type="application/x-shockwave-flash" height="378" width="620" name="video_embed" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=" bgcolor="#000000"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><param name="allowNetworking" value="all"><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf"><param name="flashvars" value="hostname=www.twitch.tv&amp;channel=btrim&amp;auto_play=true&amp;start_volume=25"></object>
+							<iframe frameborder="0" scrolling="no" name="chat_embed" src="http://twitch.tv/chat/embed?channel=btrim&amp;popout_chat=true" height="378" width="310" style="margin-left:10px;"></iframe>
+						</div>		
+						
+					</div>
+					<!--- Streamer End --->
+
+			</div>
+		
+		</div>
+		<div class="sched">
+			<div class="content_box">
+				<div class="schedcont">
+					<center>
+					<table class="tableizer-table">
+						<tr class="tableizer-firstrow"><th>Match Number</th><th>&nbsp;</th><th>First Team</th><th>Second Team</th><th>Match Time</th><th>Streamer 1</th><th>Streamer 2</th></tr>
+						 <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+						 <tr><td>18</td><td>&nbsp;</td><td>Varsity</td><td>Dropout</td><td>Fri.-7:20PM (UTC-5)</td><td>NuMina</td><td>Azur0n</td></tr>
+						 <tr><td>29</td><td>&nbsp;</td><td>HalloWeeD</td><td>Radical</td><td>Fri.-7:20PM (UTC-5)</td><td>DiamondAx</td><td>Parkway32</td></tr>
+						 <tr><td>4</td><td>&nbsp;</td><td>Tactical Info</td><td>Sigma</td><td>Sat.-11:00AM (UTC-5)</td><td>baertekk</td><td>Minii_</td></tr>
+						 <tr><td>13</td><td>&nbsp;</td><td>EnderFox</td><td>Synthesis</td><td>Sat.-11:00AM (UTC-5)</td><td>Azur0n</td><td>Karatedude</td></tr>
+						 <tr><td>22</td><td>&nbsp;</td><td>Ninja Squad</td><td>Origin</td><td>Sat.-11:00AM (UTC-5)</td><td>Strangey</td><td>ItzaMeLuigi</td></tr>
+						 <tr><td>23</td><td>&nbsp;</td><td>Chemtrail</td><td>BlackHole</td><td>Sat.-11:00AM (UTC-5)</td><td>DiamondAx</td><td>&nbsp;</td></tr>
+						 <tr><td>1</td><td>&nbsp;</td><td>Oklahomies</td><td>Orpheus</td><td>Sat.-12:20PM (UTC-5)</td><td>ItzaMeLuigi</td><td>Parkway32</td></tr>
+						 <tr><td>7</td><td>&nbsp;</td><td>Kiube</td><td>Chance</td><td>Sat.-12:20PM (UTC-5)</td><td>Azur0n</td><td>Eudaldca</td></tr>
+						 <tr><td>15</td><td>&nbsp;</td><td>Chinatown</td><td>Krysis</td><td>Sat.-12:20PM (UTC-5)</td><td>Strangey</td><td>&nbsp;</td></tr>
+						 <tr><td>21</td><td>&nbsp;</td><td>Slivers</td><td>Tsuribashi</td><td>Sat.-12:20PM (UTC-5)</td><td>Karatedude</td><td>&nbsp;</td></tr>
+						 <tr><td>25</td><td>&nbsp;</td><td>LostMexicans</td><td>Night Vision</td><td>Sat.-12:20PM (UTC-5)</td><td>baertekk</td><td>NuMina</td></tr>
+						 <tr><td>2</td><td>&nbsp;</td><td>Punishers</td><td>Weakeners</td><td>Sat.-1:40PM (UTC-5)</td><td>Pese_</td><td>NuMina</td></tr>
+						 <tr><td>8</td><td>&nbsp;</td><td>Prospekt</td><td>TheRaptors</td><td>Sat.-1:40PM (UTC-5)</td><td>Eudaldca</td><td>&nbsp;</td></tr>
+						 <tr><td>10</td><td>&nbsp;</td><td>Eclipse</td><td>Velocity</td><td>Sat.-1:40PM (UTC-5)</td><td>Strangey</td><td>baertekk</td></tr>
+						 <tr><td>12</td><td>&nbsp;</td><td>Drome</td><td>Turquaars</td><td>Sat.-1:40PM (UTC-5)</td><td>Parkway32</td><td>Karatedude</td></tr>
+						 <tr><td>16</td><td>&nbsp;</td><td>Brave Hearts</td><td>Definitive</td><td>Sat.-1:40PM (UTC-5)</td><td>ItzaMeLuigi</td><td>&nbsp;</td></tr>
+						 <tr><td>19</td><td>&nbsp;</td><td>Zenith</td><td>FirePvP</td><td>Sat.-1:40PM (UTC-5)</td><td>DiamondAx</td><td>&nbsp;</td></tr>
+						 <tr><td>27</td><td>&nbsp;</td><td>DragonSouls</td><td>Mushroom Cloud</td><td>Sat.-1:40PM (UTC-5)</td><td>Azur0n</td><td>&nbsp;</td></tr>
+						 <tr><td>6</td><td>&nbsp;</td><td>Game Mode 1</td><td>Outliers</td><td>Sat.-3:00PM (UTC-5)</td><td>Strangey</td><td>NuMina</td></tr>
+						 <tr><td>14</td><td>&nbsp;</td><td>TheJackHammers V2</td><td>Nice</td><td>Sat.-3:00PM (UTC-5)</td><td>Azur0n</td><td>ItzaMeLuigi</td></tr>
+						 <tr><td>20</td><td>&nbsp;</td><td>Sirius</td><td>Dynamo</td><td>Sat.-3:00PM (UTC-5)</td><td>baertekk</td><td>&nbsp;</td></tr>
+						 <tr><td>26</td><td>&nbsp;</td><td>Vitiate</td><td>Beyond</td><td>Sat.-3:00PM (UTC-5)</td><td>DiamondAx</td><td>&nbsp;</td></tr>
+						 <tr><td>28</td><td>&nbsp;</td><td>Default</td><td>Terabyte</td><td>Sat.-3:00PM (UTC-5)</td><td>Karatedude</td><td>&nbsp;</td></tr>
+						 <tr><td>3</td><td>&nbsp;</td><td>Zasjeda</td><td>Impact</td><td>Sat.-4:20PM (UTC-5)</td><td>Eclipsen</td><td>&nbsp;</td></tr>
+						 <tr><td>5</td><td>&nbsp;</td><td>Dopamine</td><td>5entsFromHeaven</td><td>Sat.-4:20PM (UTC-5)</td><td>Eudaldca</td><td>DiamondAx</td></tr>
+						 <tr><td>9</td><td>&nbsp;</td><td>Bone Breakers</td><td>PureBladeEnergyStorm</td><td>Sat.-4:20PM (UTC-5)</td><td>ItzaMeLuigi</td><td>&nbsp;</td></tr>
+						 <tr><td>11</td><td>&nbsp;</td><td>SquadCat</td><td>Kyetho</td><td>Sat.-4:20PM (UTC-5)</td><td>baertekk</td><td>&nbsp;</td></tr>
+						 <tr><td>17</td><td>&nbsp;</td><td>High Priests of Low Life</td><td>Incremented</td><td>Sat.-4:20PM (UTC-5)</td><td>iPGz</td><td>&nbsp;</td></tr>
+						 <tr><td>24</td><td>&nbsp;</td><td>VortexRush y Scary</td><td>FlameBreaths</td><td>Sat.-4:20PM (UTC-5)</td><td>Karatedude</td><td>&nbsp;</td></tr>
+						 <tr><td>30</td><td>&nbsp;</td><td>DaBaDee</td><td>UmizumiSwag</td><td>Sat.-4:20PM (UTC-5)</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+						 <tr><td>31</td><td>&nbsp;</td><td>HitsAttack</td><td>BYE</td><td>BYE</td><td>&nbsp;</td><td></td></tr>
+						</table>
+						</center>
+					</div>
+
 			</div>
 		</div>
-		
-		<div class="bottomcontent_background"></div>
-		
 		<div class="footerbackground">
 			<div class="content_box">
 				<p style="color: white;">Welcome to the Minecraft League Website</>
+				<button id="clickme" onclick="changeImage();">Click to change image!</button>
 			</div>
 		</div>
+		
+	
+	
+
+
+
+
+
 	</body>
 </html>
