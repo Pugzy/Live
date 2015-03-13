@@ -14,6 +14,13 @@
 		img.src="images/mcbackground.png";
 		return false;
 		}
+		
+		function changeblackImage()
+		{
+		var img = document.getElementById("image");
+		img.src="";
+		return false;
+		}
 
 	</script>
 	
@@ -39,8 +46,8 @@
 			<div class="content_box">
 
 				<div class="stream" style="text-align: center;">
-					<iframe src="http://www.twitch.tv/PrestigeGameplay/embed" frameborder="0" scrolling="no" height="380px" width="620"></iframe>
-					<iframe src="http://www.twitch.tv/PrestigeGameplay/chat?popout=" frameborder="0" scrolling="no" height="378" width="310"></iframe>
+					<iframe id="topstream" src="http://www.twitch.tv/PrestigeGameplay/embed" frameborder="0" scrolling="no" height="380px" width="620"></iframe>
+					<iframe id="topchat" src="http://www.twitch.tv/PrestigeGameplay/chat?popout=" frameborder="0" scrolling="no" height="378" width="310"></iframe>
 				</div>
 
 			</div>
@@ -60,8 +67,10 @@
 							<br>
 							<span class="streamer-title">Singularity vs Big Dango Family (RV2)</span>
 							<br>
-							<button class="button">Show Stream</button>
-							<button class="button">Link</button>
+							<button class="button" onClick="document.getElementById('topstream').src='http://www.twitch.tv/eclipson/embed';document.getElementById('topchat').src='http://www.twitch.tv/eclipson/chat?popout='">Show Stream</button>
+							<a class="button" href="http://www.twitch.tv/eclipson">Link</a>
+						
+							
 						</div>						
 					</div>
 					<!--- Streamer End --->
@@ -180,10 +189,10 @@
 		<div class="sched">
 			<div class="content_box">
 				<div class="schedcont">
+				
 					<center>
 					<table class="tableizer-table">
-						<tr class="tableizer-firstrow"><th>Match Number</th><th>&nbsp;</th><th>First Team</th><th>Second Team</th><th>Match Time</th><th>Streamer 1</th><th>Streamer 2</th></tr>
-						 <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+						<tr class="tableizer-firstrow"><th>Match Number</th><th>&nbsp;</th><th>First Team</th><th>Second Team</th><th>Match Time (<iframe src="http://free.timeanddate.com/clock/i4l1iqpe/n192/fs16/ftbi/ta1" frameborder="0" width="131" height="15px"></iframe>)</th><th>Streamer 1</th><th>Streamer 2</th></tr>
 						 <tr><td>18</td><td>&nbsp;</td><td>Varsity</td><td>Dropout</td><td>Fri.-7:20PM (UTC-5)</td><td>NuMina</td><td>Azur0n</td></tr>
 						 <tr><td>29</td><td>&nbsp;</td><td>HalloWeeD</td><td>Radical</td><td>Fri.-7:20PM (UTC-5)</td><td>DiamondAx</td><td>Parkway32</td></tr>
 						 <tr><td>4</td><td>&nbsp;</td><td>Tactical Info</td><td>Sigma</td><td>Sat.-11:00AM (UTC-5)</td><td>baertekk</td><td>Minii_</td></tr>
@@ -223,8 +232,9 @@
 		</div>
 		<div class="footerbackground">
 			<div class="content_box">
-				<p style="color: white;">Welcome to the Minecraft League Website</>
-				<button id="clickme" onclick="changeImage();">Click to change image!</button>
+				<p style="color:white">Press these to change the top image.</p>
+				<button id="clickme" onclick="changeImage();">Alternate</button>
+				<button id="clickme" onclick="changeblackImage();">Black</button>
 			</div>
 		</div>
 		
