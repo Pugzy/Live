@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+	<title>Live - OCN HOC</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="main.css" type="text/css" rel="stylesheet" />
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	
+	<script> 
+
+		function changeImage()
+		{
+		var img = document.getElementById("image");
+		img.src="images/mcbackground.png";
+		return false;
+		}
+		
+		function changeblackImage()
+		{
+		var img = document.getElementById("image");
+		img.src="";
+		return false;
+		}
+
+	</script>
+	
+	
+</head>
+	<body>
+		<div class="navbar">
+			<div class="content_box">
+				<img src="images/tracksitelogo.png" style="height:30px;margin-top:6px;">
+				
+				<ul style="float:right;">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Live</a></li>
+					<li><a href="#">Schedule</a></li>
+					<li style="border-right: 1px solid gray;" id="navtext"><a href="#">About</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="topcontent_background">
+			<div class="mainbackground">
+				<img src="images/mcbackground2.png" id="image">
+			</div>
+			<div class="content_box">
+
+				<div class="stream" style="text-align: center;">
+					<iframe id="topstream" src="http://www.twitch.tv/Eclipson/embed" frameborder="0" scrolling="no" height="380px" width="620"></iframe>
+					<iframe id="topchat" src="http://www.twitch.tv/Eclipson/chat?popout=" frameborder="0" scrolling="no" height="380px" width="310"></iframe>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="bottomcontent_background">
+		
+			<div class="content_box">
+													<!--- Streamer --->
+					<div class="streamerbox">
+						<div class="streamer-logo">
+							<img src="https://minotar.net/helm/Eclipsen/168.png" width="60" height="60">
+						</div>
+						<div class="streamer-text">
+							<span class="streamer-name"><strong>Eclipsen</strong></span>
+							<br>
+							<span class="streamer-title">ESP - Fight me IRL</span>
+							<br>
+							<button class="button" onClick="document.getElementById('topstream').src='http://www.twitch.tv/Eclipson/embed';document.getElementById('topchat').src='http://www.twitch.tv/eclipson/chat?popout='">Show Stream</button>
+							<button class="button" onclick="window.open('http://www.twitch.tv/Eclipson', '_blank');">Link</button>	
+						</div>				
+					</div>
+					<!--- Streamer End --->
+				
+				<!--- Streamer -->
+				<div class="streamerbox">
+					<div class="streamer-logo">
+						<img src="https://minotar.net/helm/baertekk/168.png" width="60" height="60">
+					</div>
+					<div class="streamer-text">
+						<span class="streamer-name"><strong>baertekk</strong></span>
+						<br>
+						<span class="streamer-title">ENG - Too many cooks!</span>
+						<br>
+						<button class="button" onClick="document.getElementById('topstream').src='http://www.twitch.tv/baertekk/embed';document.getElementById('topchat').src='http://www.twitch.tv/eclipson/chat?popout='">Show Stream</button>
+						<button class="button" onclick="window.open('http://www.twitch.tv/baertekk', '_blank');">Link</button>	
+					</div>					
+				</div>
+				
+				<!--- Streamer End -->
+				
+				<!--- Streamer --->
+				<div class="streamerbox">
+					<div class="streamer-logo">
+						<img src="https://minotar.net/helm/Parkway/168.png" width="60" height="60">
+					</div>
+					<div class="streamer-text">
+						<span class="streamer-name"><strong>Parkway</strong></span>
+						<br>
+						<span class="streamer-title">ENG - What is love?</span>
+						<br>
+						<button class="button" onClick="document.getElementById('topstream').src='http://www.twitch.tv/Parkway32/embed';document.getElementById('topchat').src='http://www.twitch.tv/eclipson/chat?popout='">Show Stream</button>
+						<button class="button" onclick="window.open('http://www.twitch.tv/Parkway32', '_blank');">Link</button>	
+					</div>			
+				</div>
+				<!--- Streamer End --->
+									<!--- Streamer --->
+				<div class="streamerbox">
+					<div class="streamer-logo">
+						<img src="https://minotar.net/helm/ItzaMeLuigi/168.png" width="60" height="60">
+					</div>
+					<div class="streamer-text">
+						<span class="streamer-name"><strong>ItzaMeLuigi</strong></span>
+						<br>
+						<span class="streamer-title">ENG - Baby don't hurt me :(</span>
+						<br>
+						<button class="button" onClick="document.getElementById('topstream').src='http://www.twitch.tv/itzameluigilp/embed';document.getElementById('topchat').src='http://www.twitch.tv/eclipson/chat?popout='">Show Stream</button>
+						<button class="button" onclick="window.open('http://www.twitch.tv/itzameluigilp', '_blank');">Link</button>	
+					</div>				
+				</div>
+			</div>
+		
+		</div>
+		<div class="sched">
+			<div class="content_box">
+				<div class="schedcont">
+				
+					<center>
+					<table class="tableizer-table">
+						<tr class="tableizer-firstrow"><th>Match Number</th><th>&nbsp;</th><th>First Team</th><th>Second Team</th><th>Match Time (<iframe src="http://free.timeanddate.com/clock/i4l1iqpe/n192/fs16/ftbi/ta1" frameborder="0" width="131" height="15px"></iframe>)</th><th>Streamer 1</th><th>Streamer 2</th></tr>
+						 <tr><td>5</td><td>&nbsp;</td><td>Oklahomies</td><td>Kiube</td><td>SAT 12:30 PM UTC-5)</td><td>Eclipsen</td><td>Eudaldca</td></tr>
+						 <tr><td>6</td><td>&nbsp;</td><td>5entsFromHeaven</td><td>Tactical Info</td><td>SAT 12:30 PM (UTC-5)</td><td>baertekk</td><td>-</td></tr>
+						 <tr><td>7</td><td>&nbsp;</td><td>Weakeners Info</td><td>Eclipse</td><td>SAT 12:30 PM (UTC-5)</td><td>Parkway</td><td>-</td></tr>
+						 <tr><td>8</td><td>&nbsp;</td><td>Impact</td><td>Game Mode 1</td><td>SAT 12:30 PM (UTC-5)</td><td>ItzaMeLuigi</td><td>-</td></tr>
+						</table>
+						</center>
+					</div>
+
+			</div>
+		</div>
+		<div class="footerbackground">
+			<div class="content_box">
+				<p style="color:white">Press these to change the top image.</p>
+				<button id="clickme" onclick="changeImage();">Alternate</button>
+				<button id="clickme" onclick="changeblackImage();">Black</button>
+			</div>
+		</div>
+		
+	
+	
+
+
+
+
+
+	</body>
+</html>
